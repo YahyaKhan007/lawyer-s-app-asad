@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,7 +7,7 @@ import 'package:laywers_app/model/advocate_model.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:laywers_app/services/services.dart';
 import 'package:laywers_app/view/widgets/spinkit.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 
 class CheckProfile extends StatelessWidget {
   final AdvocateModel enduser;
@@ -17,10 +15,10 @@ class CheckProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<dynamic> rateddd = enduser.ratedFrom!;
+    // List<dynamic> rateddd = enduser.ratedFrom!;
     var authController = Get.find<FirebaseAuthController>();
-    UserProvider userProvider =
-        Provider.of<UserProvider>(context, listen: true);
+    // UserProvider userProvider =
+    //     Provider.of<UserProvider>(context, listen: true);
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: PreferredSize(
@@ -123,19 +121,19 @@ class CheckProfile extends StatelessWidget {
                       ),
                       onRatingUpdate: (rating) {
                         authController.rate.value = rating;
-                        print(authController.rate.value);
+                        // print(authController.rate.value);
                       },
                     ),
                     trailing: authController.isLoading.value
                         ? spinkit(color: Colors.blue)
                         : TextButton(
                             onPressed: () {
-                              print(
-                                  "You give ${authController.rate.value} ratings to the advocate");
-                              authController.ratetheAdvocate(
-                                advocateModel: enduser,
-                                userProvider: userProvider,
-                              );
+                              // print(
+                              //     "You give ${authController.rate.value} ratings to the advocate");
+                              // authController.ratetheAdvocate(
+                              //   advocateModel: enduser,
+                              //   userProvider: userProvider,
+                              // );
                             },
                             child: const Text("Submit"),
                           ),

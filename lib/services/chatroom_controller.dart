@@ -5,7 +5,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:laywers_app/services/services.dart';
 import 'package:uuid/uuid.dart';
 
 import '../main.dart';

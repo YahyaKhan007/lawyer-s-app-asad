@@ -2,12 +2,11 @@
 
 import 'dart:developer';
 
-import 'package:action_slider/action_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laywers_app/services/loading_provider.dart';
+// import 'package:laywers_app/services/loading_provider.dart';
 import 'package:laywers_app/services/services.dart';
 import 'package:laywers_app/view/complete_profile.dart/login.dart';
 import 'package:laywers_app/view/constants/ui_constants.dart';
@@ -38,7 +37,7 @@ class _SignupState extends State<Signup> {
 
   TextEditingController signupConfirmPasswordController =
       TextEditingController();
-  final _controller = ActionSliderController();
+  // final _controller = ActionSliderController();
 
   @override
   void initState() {
@@ -51,7 +50,7 @@ class _SignupState extends State<Signup> {
   Widget build(BuildContext context) {
     UserProvider userProvider =
         Provider.of<UserProvider>(context, listen: true);
-    Loading loading = Provider.of<Loading>(context, listen: true);
+    // Loading loading = Provider.of<Loading>(context, listen: true);
     Size size = MediaQuery.of(context).size;
     return GetBuilder<FirebaseAuthController>(
       init: FirebaseAuthController(),
@@ -69,7 +68,7 @@ class _SignupState extends State<Signup> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Get.off(() => Login(),
+                    Get.off(() => const Login(),
                         transition: Transition.zoom,
                         duration: const Duration(milliseconds: 800));
                   },

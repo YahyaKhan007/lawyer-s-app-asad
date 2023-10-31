@@ -10,11 +10,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:laywers_app/model/models.dart';
-import 'package:laywers_app/services/firebase_auth_controller.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laywers_app/services/services.dart';
 import 'package:laywers_app/view/constants/ui_constants.dart';
-import 'package:laywers_app/view/screens.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/spinkit.dart';

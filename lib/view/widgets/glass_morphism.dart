@@ -82,7 +82,7 @@ Widget GlassMorphism(
             const Color.fromARGB(255, 93, 87, 87).withOpacity(0.1),
             const Color.fromARGB(255, 87, 79, 79).withOpacity(0.2),
           ],
-          stops: [
+          stops: const [
             0.1,
             1,
           ]),
