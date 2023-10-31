@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "847118228523",
+    "project_id": "lawyers-app-64344",
+    "storage_bucket": "lawyers-app-64344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847118228523:android:b49f91f33d43e7ca1b1e6e",
+        "android_client_info": {
+          "package_name": "com.example.laywers_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY3j-kuqYGewZ1qfxUhp16NnQ8PcuEGlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
